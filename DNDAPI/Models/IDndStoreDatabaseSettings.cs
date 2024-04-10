@@ -2,8 +2,9 @@
 {
     public interface IDndStoreDatabaseSettings
     {
-        string DndDamageTypeCollectionName { get; set; }
         string ConnectionString { get; set; }
         string DatabaseName {  get; set; }
+        string DndDamageTypeCollectionName { get; set; }
+        string DndAlignmentCollectionName { get; set; }
     }
 }
