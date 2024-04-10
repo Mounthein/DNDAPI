@@ -10,7 +10,7 @@ namespace DNDAPI.Models
         public string Id { get; set; } = String.Empty;
 
         [BsonElement("desc")]
-        public string Description { get; set; } = String.Empty;
+        public string[]? Description { get; set; }
 
         [BsonElement("index")]
         public string Index {  get; set; } = String.Empty;
