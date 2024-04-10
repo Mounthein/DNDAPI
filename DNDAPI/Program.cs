@@ -1,6 +1,18 @@
+using DNDAPI.Models;
+using DNDAPI.Services;
+using Microsoft.Extensions.Options;
+using MongoDB.Driver;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.Configure<DndStoreDatabaseSettings>(builder.Configuration.GetSection(nameof(DndStoreDatabaseSettings)));
+builder.Services.AddSingleton<IDndStoreDatabaseSettings>(sp => sp.GetRequiredService<IOptions<DndStoreDatabaseSettings>>().Value);
+builder.Services.AddSingleton<IMongoClient>(s => new MongoClient(builder.Configuration.GetValue<string>("DndStoreDatabaseSettings:ConnectionString")));
+builder.Services.AddScoped<IDamageTypeService, DamageTypeService>();
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
