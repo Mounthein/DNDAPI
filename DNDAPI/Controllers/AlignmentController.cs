@@ -68,7 +68,7 @@ namespace DNDAPI.Controllers
 
             alignmentService.Remove(alignement.Id);
 
-            return NoContent();
+            return Ok($"Alignment with Id = {id} deleted");
         }
     }
 }

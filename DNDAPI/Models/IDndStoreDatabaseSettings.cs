@@ -7,5 +7,6 @@
         string DndDamageTypeCollectionName { get; set; }
         string DndAlignmentCollectionName { get; set; }
         string DndWeaponPropertyCollectionName { get; set; }
+        string DndConditionsCollectionName { get; set; }
     }
 }
