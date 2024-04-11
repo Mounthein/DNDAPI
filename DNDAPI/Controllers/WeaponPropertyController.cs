@@ -69,7 +69,7 @@ namespace DNDAPI.Controllers
 
             weaponPropertyService.Remove(property.Id);
 
-            return NoContent();
+            return Ok($"Weapon property with Id = {id} deleted");
         }
     }
 }

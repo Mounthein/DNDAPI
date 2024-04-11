@@ -29,9 +29,9 @@ namespace DNDAPI.Services
             return _condition.Find(con => con.Id == id).FirstOrDefault();
         }
 
-        public void Remove(Conditions condition)
+        public void Remove(string id)
         {
-            _condition.DeleteOne(cond => cond.Id == condition.Id);
+            _condition.DeleteOne(cond => cond.Id == id);
         }
 
         public void Update(string id, Conditions condition)

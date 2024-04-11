@@ -68,7 +68,7 @@ namespace DNDAPI.Controllers
 
             damageTypeService.Remove(damageType.Id);
 
-            return Ok($"Student with Id = {id} deleted");
+            return Ok($"Damage Type with Id = {id} deleted");
         }
     }
 }

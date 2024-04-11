@@ -9,6 +9,6 @@ namespace DNDAPI.Services
         Conditions Get(string id);
         Conditions Create(Conditions condition);
         void Update(string id, Conditions condition);
-        void Remove(Conditions condition);
+        void Remove(string id);
     }
 }
