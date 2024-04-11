@@ -34,7 +34,7 @@ namespace DNDAPI.Services
 
         public void Update(string id, Alignment alignment)
         {
-            _alignment.ReplaceOne(alignment => alignment.Id == id, alignment);
+            _alignment.ReplaceOne(align => align.Id == id, alignment);
         }
     }
 }

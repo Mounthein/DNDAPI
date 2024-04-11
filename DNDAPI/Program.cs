@@ -11,6 +11,7 @@ builder.Services.Configure<DndStoreDatabaseSettings>(builder.Configuration.GetSe
 builder.Services.AddSingleton<IDndStoreDatabaseSettings>(sp => sp.GetRequiredService<IOptions<DndStoreDatabaseSettings>>().Value);
 builder.Services.AddSingleton<IMongoClient>(s => new MongoClient(builder.Configuration.GetValue<string>("DndStoreDatabaseSettings:ConnectionString")));
 builder.Services.AddScoped<IDamageTypeService, DamageTypeService>();
+builder.Services.AddScoped<IAlignmentService, AlignmentService>();
 
 
 

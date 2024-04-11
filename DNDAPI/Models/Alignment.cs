@@ -11,9 +11,9 @@ namespace DNDAPI.Models
         
         [BsonElement("abbreviation")]
         public string Abbreviation { get; set; } = String.Empty;
-        
+
         [BsonElement("desc")]
-        public string[]? Description { get; set; }
+        public string Description { get; set; } = String.Empty;
 
         [BsonElement("index")]
         public string Index { get; set; } = String.Empty;
