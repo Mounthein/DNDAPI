@@ -13,6 +13,7 @@ builder.Services.AddSingleton<IMongoClient>(s => new MongoClient(builder.Configu
 builder.Services.AddScoped<IDamageTypeService, DamageTypeService>();
 builder.Services.AddScoped<IAlignmentService, AlignmentService>();
 builder.Services.AddScoped<IWeaponPropertyService, WeaponPropertyService>();
+builder.Services.AddScoped<IConditionService, ConditionService>();
 
 
 builder.Services.AddControllers();
