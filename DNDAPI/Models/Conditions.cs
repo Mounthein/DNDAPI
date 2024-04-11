@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace DNDAPI.Models
 {
-    public class Condition
+    public class Conditions
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
