@@ -8,5 +8,6 @@
         public string DndAlignmentCollectionName {  get; set; } = String.Empty;
         public string DndWeaponPropertyCollectionName {get; set; } = String.Empty;
         public string DndConditionsCollectionName { get; set; } = String.Empty;
+        public string DndLanguageCollectionName { get; set; } = String.Empty;
     }
 }
