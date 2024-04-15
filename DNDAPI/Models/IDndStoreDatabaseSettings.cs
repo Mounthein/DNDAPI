@@ -9,6 +9,7 @@
         string DndWeaponPropertyCollectionName { get; set; }
         string DndConditionsCollectionName { get; set; }
         string DndLanguageCollectionName { get; set; }
+        string DndSkillCollectionName { get; set; }
 
     }
 }
