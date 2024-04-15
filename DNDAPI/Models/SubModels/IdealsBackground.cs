@@ -10,7 +10,7 @@ namespace DNDAPI.Models.SubModels
         public int? Choose { get; set; }
 
         [BsonElement("from")]
-        public From? From { get; set; }
+        public IdealBackground[]? From { get; set; }
 
         [BsonElement("type")]
         public string Type { get; set; } = String.Empty;

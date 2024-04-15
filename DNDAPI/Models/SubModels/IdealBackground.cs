@@ -7,7 +7,7 @@ namespace DNDAPI.Models.SubModels
     public class IdealBackground
     {
         [BsonElement("alignments")]
-        public From[]? Alignments { get; set; }
+        public AlignmentsBackground? Alignments { get; set; }
 
         [BsonElement("desc")]
         public string Description { get; set; } = String.Empty;

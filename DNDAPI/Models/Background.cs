@@ -36,10 +36,10 @@ namespace DNDAPI.Models
         public ChooseFrom? PersonalityTraits { get; set; }
 
         [BsonElement("starting_equipment")]
-        public StartingEquipmentBa? StartingEquipment { get; set; }
+        public StartingEquipmentBa[]? StartingEquipment { get; set; }
 
         [BsonElement("starting_equipment_options")]
-        public StartingEquipmentOptionBa? StartingEquipmentOption { get; set;}
+        public StartingEquipmentOptionBa[]? StartingEquipmentOption { get; set;}
 
         [BsonElement("starting_proficiencies")]
         public List<From>? StartingProficiencies { get; set; }

@@ -7,7 +7,7 @@ namespace DNDAPI.Models.SubModels
     public class StartingEquipmentBa
     {
         [BsonElement("equipment")]
-        public ChooseFrom? Equipment { get; set; }
+        public From? Equipment { get; set; }
 
         [BsonElement("quantity")]
         public int? Quantity { get; set; }
