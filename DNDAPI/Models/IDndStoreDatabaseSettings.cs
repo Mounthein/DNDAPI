@@ -8,5 +8,7 @@
         string DndAlignmentCollectionName { get; set; }
         string DndWeaponPropertyCollectionName { get; set; }
         string DndConditionsCollectionName { get; set; }
+        string DndLanguageCollectionName { get; set; }
+
     }
 }

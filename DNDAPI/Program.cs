@@ -14,6 +14,7 @@ builder.Services.AddScoped<IDamageTypeService, DamageTypeService>();
 builder.Services.AddScoped<IAlignmentService, AlignmentService>();
 builder.Services.AddScoped<IWeaponPropertyService, WeaponPropertyService>();
 builder.Services.AddScoped<IConditionService, ConditionService>();
+builder.Services.AddScoped<ILanguageService, LanguageService>();
 
 
 builder.Services.AddControllers();
