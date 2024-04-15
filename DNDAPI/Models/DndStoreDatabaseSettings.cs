@@ -10,5 +10,6 @@
         public string DndConditionsCollectionName { get; set; } = String.Empty;
         public string DndLanguageCollectionName { get; set; } = String.Empty;
         public string DndSkillCollectionName { get; set; } = String.Empty;
+        public string DndAbilityScoreCollectionName {  get; set; } = String.Empty;
     }
 }
