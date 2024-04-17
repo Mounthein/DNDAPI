@@ -18,7 +18,6 @@ builder.Services.AddScoped<ILanguageService, LanguageService>();
 builder.Services.AddScoped<ISkillService, SkillService>();
 builder.Services.AddScoped<IAbilityScoreService, AbilityScoreService>();
 builder.Services.AddScoped<IBackgroundService, DNDAPI.Services.BackgroundService>();
-builder.Services.AddScoped<IEquipmentService, EquipmentService>();
 
 
 builder.Services.AddControllers();
