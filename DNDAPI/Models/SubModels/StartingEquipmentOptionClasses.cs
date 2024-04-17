@@ -7,12 +7,12 @@ namespace DNDAPI.Models.SubModels
     public class StartingEquipmentOptionClasses
     {
         [BsonElement("desc")]
-        public string Description { get; set; }
+        public string Description { get; set; } = String.Empty;
 
         [BsonElement("choose")]
         public int? Choose { get; set; }
 
         [BsonElement("from")]
-        public From? From { get; set; }
+        public List<OptionItemClasses[]>? From { get; set; }
     }
 }

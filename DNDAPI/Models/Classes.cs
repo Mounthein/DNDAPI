@@ -12,7 +12,7 @@ namespace DNDAPI.Models
         public string Id { get; set; } = String.Empty;
 
         [BsonElement("hit_die")]
-        public string HitDie { get; set; } = String.Empty;
+        public int? HitDie { get; set; }
 
         [BsonElement("index")]
         public string Index { get; set; } = String.Empty;
@@ -33,7 +33,7 @@ namespace DNDAPI.Models
         public From[]? SavingThrows { get; set; }
 
         [BsonElement("spellcasting")]
-        public SpellcastingClass[]? Spellcasting { get; set;}
+        public SpellcastingClass? Spellcasting { get; set;}
 
         [BsonElement("starting_equipment")]
         public StartingEquipmentClasses[]? StartingEquipment { get; set; }
