@@ -14,5 +14,6 @@
         string DndBackgroundCollectionName { get; set; }
         string DndClassCollectionName { get; set; }
         string DndEquipmentCollectionName { get; set; }
+        string DndEquipmentCategoriesCollectionName { get; set; }
     }
 }
