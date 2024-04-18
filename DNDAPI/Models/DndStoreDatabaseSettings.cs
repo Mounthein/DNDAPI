@@ -15,5 +15,6 @@
         public string DndClassCollectionName { get; set; } = String.Empty;
         public string DndEquipmentCollectionName { get; set; } = String.Empty;
         public string DndEquipmentCategoriesCollectionName { get; set; } = String.Empty;
+        public string DndFeatsCollectionName { get; set; } = String.Empty;
     }
 }
