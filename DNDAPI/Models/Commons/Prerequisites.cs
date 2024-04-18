@@ -1,7 +1,6 @@
-﻿using DNDAPI.Models.Commons;
-using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace DNDAPI.Models.SubModels
+namespace DNDAPI.Models.Commons
 {
     [BsonNoId]
     public class Prerequisites
