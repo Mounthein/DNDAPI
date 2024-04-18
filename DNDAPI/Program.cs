@@ -20,6 +20,7 @@ builder.Services.AddScoped<IAbilityScoreService, AbilityScoreService>();
 builder.Services.AddScoped<IClassesService, ClassesService>();
 builder.Services.AddScoped<IBackgroundService, DNDAPI.Services.BackgroundService>();
 builder.Services.AddScoped<IEquipmentService, EquipmentService>();
+builder.Services.AddScoped<IClassesService, ClassesService>();
 
 
 builder.Services.AddControllers();
