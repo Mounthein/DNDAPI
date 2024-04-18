@@ -1,4 +1,5 @@
 ﻿using DNDAPI.Models.Commons;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace DNDAPI.Models
@@ -6,7 +7,7 @@ namespace DNDAPI.Models
     public class EquipmentCategory
     {
         [BsonId]
-        [BsonElement("_id")]
+        [BsonRepresentation(BsonType.ObjectId)]
         public string Id { get; set; } = String.Empty;
 
         [BsonElement("equipment")]

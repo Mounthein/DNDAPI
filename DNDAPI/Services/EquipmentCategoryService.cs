@@ -10,7 +10,7 @@ namespace DNDAPI.Services
         public EquipmentCategoryService(IDndStoreDatabaseSettings settings, IMongoClient mongoClient)
         {
             var database = mongoClient.GetDatabase(settings.DatabaseName);
-
+            _equipmentCategories = database.GetCollection<EquipmentCategory>(settings.DndEquipmentCategoriesCollectionName);
         }
         public EquipmentCategory Create(EquipmentCategory equipmentCategory)
         {
