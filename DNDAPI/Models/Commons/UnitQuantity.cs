@@ -6,7 +6,7 @@ namespace DNDAPI.Models.Commons
     public class UnitQuantity
     {
         [BsonElement("quantity")]
-        public int? Quantity { get; set; }
+        public double? Quantity { get; set; }
 
         [BsonElement("unit")]
         public string String { get; set; } = String.Empty;

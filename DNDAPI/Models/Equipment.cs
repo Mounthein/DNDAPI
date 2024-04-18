@@ -57,7 +57,7 @@ namespace DNDAPI.Models
         public DNDAPI.Models.Commons.Range? Range { get; set; }
 
         [BsonElement("special")]
-        public string Special { get; set; } = String.Empty;
+        public string[]? Special { get; set; }
 
         [BsonElement("speed")]
         public UnitQuantity? Speed { get; set; }
@@ -65,7 +65,7 @@ namespace DNDAPI.Models
         [BsonElement("stealth_disadvantage")]
         public bool? StealthDisadvantage { get; set; }
 
-        [BsonElement("str_Minimum")]
+        [BsonElement("str_minimum")]
         public int? StrengthMinimum { get; set; }
 
         [BsonElement("throw_range")]
@@ -87,6 +87,6 @@ namespace DNDAPI.Models
         public string WeaponRange { get; set; } = String.Empty;
 
         [BsonElement("weight")]
-        public int? Weight { get; set;}
+        public double? Weight { get; set;}
     }
 }
