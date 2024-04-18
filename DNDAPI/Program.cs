@@ -22,6 +22,7 @@ builder.Services.AddScoped<IBackgroundService, DNDAPI.Services.BackgroundService
 builder.Services.AddScoped<IEquipmentService, EquipmentService>();
 builder.Services.AddScoped<IClassesService, ClassesService>();
 builder.Services.AddScoped<IEquipmentCategoryService, EquipmentCategoryService>();
+builder.Services.AddScoped<IFeatService, FeatService>();
 
 
 builder.Services.AddControllers();
