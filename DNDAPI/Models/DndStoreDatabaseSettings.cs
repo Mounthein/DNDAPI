@@ -13,6 +13,6 @@
         public string DndAbilityScoreCollectionName {  get; set; } = String.Empty;
         public string DndBackgroundCollectionName {  get; set; } = String.Empty;
         public string DndClassCollectionName { get; set; } = String.Empty;
-        public string DndBackgroundCollectionName { get; set; } = String.Empty;
+        public string DndEquipmentCollectionName { get; set; } = String.Empty;
     }
 }
