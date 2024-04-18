@@ -12,5 +12,7 @@
         string DndSkillCollectionName { get; set; }
         string DndAbilityScoreCollectionName { get; set; }
         string DndBackgroundCollectionName { get; set; }
+        string DndClassCollectionName { get; set; }
+        string DndBackgroundCollectionName { get; set; }
     }
 }
