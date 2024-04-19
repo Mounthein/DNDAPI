@@ -17,5 +17,6 @@
         string DndEquipmentCategoriesCollectionName { get; set; }
         string DndFeatsCollectionName { get; set; }
         string DndFeaturesCollectionName { get; set; }
+        string DndLevelCollectioName { get; set; }
     }
 }
