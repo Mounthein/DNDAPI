@@ -8,7 +8,7 @@ namespace DNDAPI.Models.Commons
         [BsonElement("dice_count")]
         public int? DiceCount { get; set; }
 
-        [BsonElement("dice_values")]
+        [BsonElement("dice_value")]
         public int? DiceValues { get; set; }
     }
 }

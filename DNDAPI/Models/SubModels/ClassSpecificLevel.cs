@@ -25,10 +25,10 @@ namespace DNDAPI.Models.SubModels
         public int? ChannelDivinityCharges { get; set; }
 
         [BsonElement("creating_spell_slots")]
-        public CreatingSpellSlotsLevel? CreatingSpellSlots { get; set; }
+        public CreatingSpellSlotsLevel[]? CreatingSpellSlots { get; set; }
 
         [BsonElement("destroy_undead_cr")]
-        public int? DestroyUndeadCr { get; set; }
+        public double? DestroyUndeadCr { get; set; }
 
         [BsonElement("extra_attacks")]
         public int? ExtraAttacks { get; set; }
@@ -94,12 +94,12 @@ namespace DNDAPI.Models.SubModels
         public int? UnarmoredMovement { get; set; }
 
         [BsonElement("wild_shape_fly")]
-        public int? WildShapeFly { get; set; }
+        public bool? WildShapeFly { get; set; }
 
         [BsonElement("wild_shape_max_cr")]
-        public int? WildShapeMaxCr { get; set; }
+        public double? WildShapeMaxCr { get; set; }
 
         [BsonElement("wild_shape_swim")]
-        public int? WildShapeSwim { get; set; }
+        public bool? WildShapeSwim { get; set; }
     }
 }

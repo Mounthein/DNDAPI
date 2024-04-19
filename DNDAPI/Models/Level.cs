@@ -14,6 +14,9 @@ namespace DNDAPI.Models
         [BsonElement("ability_score_bonuses")]
         public int? AbilityScoreBonuses { get; set; }
 
+        [BsonElement("class")]
+        public From? Class { get; set; }
+
         [BsonElement("classLevels")]
         public From? ClassLevels { get; set; }
 
@@ -21,7 +24,7 @@ namespace DNDAPI.Models
         public ClassSpecificLevel? ClassSpecific { get; set; }
 
         [BsonElement("features")]
-        public From[]? Features { get; set; }
+        public ArrayedFrom[]? Features { get; set; }
 
         [BsonElement("index")]
         public string Index { get; set; } = String.Empty;
@@ -39,6 +42,6 @@ namespace DNDAPI.Models
         public From? Subcalss { get; set; }
 
         [BsonElement("subclass_specific")]
-        public SubclassSpecificLevel[]? Subcategories { get; set; }
+        public SubclassSpecificLevel? Subcategories { get; set; }
     }
 }
