@@ -30,6 +30,6 @@ namespace DNDAPI.Models
         public Boolean? Variant { get; set; }
 
         [BsonElement("variants")]
-        public string[]? Variants { get; set;}
+        public From[]? Variants { get; set;}
     }
 }

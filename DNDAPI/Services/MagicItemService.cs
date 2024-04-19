@@ -12,7 +12,7 @@ namespace DNDAPI.Services
             var database = mongoClient.GetDatabase(settings.DatabaseName);
             _magicItems = database.GetCollection<MagicItem>(settings.DndMagicItemsName);
         }
-        public MagicItem Crete(MagicItem item)
+        public MagicItem Create(MagicItem item)
         {
             _magicItems.InsertOne(item);
             return item;

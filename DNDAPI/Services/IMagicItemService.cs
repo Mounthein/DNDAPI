@@ -6,7 +6,7 @@ namespace DNDAPI.Services
     {
         List<MagicItem> Get();
         MagicItem Get(string id);
-        MagicItem Crete(MagicItem item);
+        MagicItem Create(MagicItem item);
         void Update(string id, MagicItem item);
         void Remove(string id);
     }
