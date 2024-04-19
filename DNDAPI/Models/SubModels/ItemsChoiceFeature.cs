@@ -9,7 +9,7 @@ namespace DNDAPI.Models.SubModels
         [BsonElement("choose")]
         public int[]? Choose { get; set; }
 
-        [BsonElement("item")]
-        public From[]? Item { get; set; }
+        [BsonElement("from")]
+        public ArrayedFrom[]? Item { get; set; }
     }
 }

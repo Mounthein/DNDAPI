@@ -7,9 +7,9 @@ namespace DNDAPI.Models.SubModels
     public class ItemsFeature
     {
         [BsonElement("choice")]
-        public ItemsChoiceFeature Choice { get; set; }
+        public ItemsChoiceFeature? Choice { get; set; }
 
         [BsonElement("item")]
-        public From? Item { get; set; }
+        public ArrayedFrom? Item { get; set; }
     }
 }

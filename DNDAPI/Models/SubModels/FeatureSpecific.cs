@@ -5,7 +5,7 @@ namespace DNDAPI.Models.SubModels
     [BsonNoId]
     public class FeatureSpecific
     {
-        [BsonElement("expertise_option")]
+        [BsonElement("expertise_options")]
         public ExpertiseOptionFeature? ExpertiseOption { get; set; }
 
         [BsonElement("invocations")]

@@ -6,7 +6,7 @@ namespace DNDAPI.Models.SubModels
     public class ExpertiseOptionFeature
     {
         [BsonElement("choose")]
-        public int? Choose { get; set; }
+        public double? Choose { get; set; }
 
         [BsonElement("from")]
         public ExpertiseOptionFromFeature[]? From { get; set; }

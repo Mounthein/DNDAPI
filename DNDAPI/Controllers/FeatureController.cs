@@ -11,7 +11,7 @@ namespace DNDAPI.Controllers
     public class FeatureController : ControllerBase
     {
         private readonly IFeatureService featureService;
-        FeatureController(IFeatureService featureService)
+        public FeatureController(IFeatureService featureService)
         {
             this.featureService = featureService;
         }
