@@ -66,7 +66,7 @@ namespace DNDAPI.Controllers
                 return NotFound($"Proficiency with Id = {id} not found");
             }
 
-            proficiencyService.Remove(id);
+            proficiencyService.Remove(proficiency.Id);
 
             return Ok($"Proficiency with Id = {id} deleted");
         }

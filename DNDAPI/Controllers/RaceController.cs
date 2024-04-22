@@ -66,7 +66,7 @@ namespace DNDAPI.Controllers
                 return NotFound($"Race with Id = {id} not found");
             }
 
-            raceService.Remove(id);
+            raceService.Remove(race.Id);
 
             return Ok($"Race with Id = {id} deleted");
         }
