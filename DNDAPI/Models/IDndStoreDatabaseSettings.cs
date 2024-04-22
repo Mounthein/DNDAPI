@@ -24,5 +24,6 @@
         string DndRaceCollectionName { get; set; }
         string DndSpellCollectionName { get; set; }
         string DndSubclassesCollectionName { get; set; }
+        string DndSubRaceCollectionName { get; set; }
     }
 }
