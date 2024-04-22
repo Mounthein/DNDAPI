@@ -21,5 +21,6 @@
         string DndMagicItemsName { get; set; }
         string DndMagicSchoolsCollectionName { get; set; }
         string DndProficiencyCollectionName { get; set; }
+        string DndRaceCollectionName { get; set; }
     }
 }

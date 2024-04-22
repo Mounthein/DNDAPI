@@ -21,5 +21,6 @@
         public string DndMagicItemsName { get; set; } = String.Empty;
         public string DndMagicSchoolsCollectionName { get; set; } = String.Empty;
         public string DndProficiencyCollectionName { get; set; } = String.Empty;
+        public string DndRaceCollectionName { get; set; } = String.Empty;
     }
 }
