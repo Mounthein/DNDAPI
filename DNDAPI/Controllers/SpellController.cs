@@ -66,7 +66,7 @@ namespace DNDAPI.Controllers
                 return NotFound($"Spell with Id = {id} not found");
             }
 
-            spellService.Remove(id);
+            spellService.Remove(spell.Id);
 
             return Ok($"Spell with Id = {id} deleted");
         }
