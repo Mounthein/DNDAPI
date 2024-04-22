@@ -10,7 +10,7 @@ namespace DNDAPI.Services
         public MagicItemService(IDndStoreDatabaseSettings settings, IMongoClient mongoClient)
         {
             var database = mongoClient.GetDatabase(settings.DatabaseName);
-            _magicItems = database.GetCollection<MagicItem>(settings.DndMagicItemsName);
+            _magicItems = database.GetCollection<MagicItem>(settings.DndMagicItemsCollectionName);
         }
         public MagicItem Create(MagicItem item)
         {

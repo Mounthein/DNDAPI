@@ -18,7 +18,7 @@
         string DndFeatsCollectionName { get; set; }
         string DndFeaturesCollectionName { get; set; }
         string DndLevelCollectioName { get; set; }
-        string DndMagicItemsName { get; set; }
+        string DndMagicItemsCollectionName { get; set; }
         string DndMagicSchoolsCollectionName { get; set; }
         string DndProficiencyCollectionName { get; set; }
         string DndRaceCollectionName { get; set; }

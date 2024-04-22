@@ -18,7 +18,7 @@
         public string DndFeatsCollectionName { get; set; } = String.Empty;
         public string DndFeaturesCollectionName { get; set; } = String.Empty;
         public string DndLevelCollectioName { get; set; } = String.Empty;
-        public string DndMagicItemsName { get; set; } = String.Empty;
+        public string DndMagicItemsCollectionName { get; set; } = String.Empty;
         public string DndMagicSchoolsCollectionName { get; set; } = String.Empty;
         public string DndProficiencyCollectionName { get; set; } = String.Empty;
         public string DndRaceCollectionName { get; set; } = String.Empty;
