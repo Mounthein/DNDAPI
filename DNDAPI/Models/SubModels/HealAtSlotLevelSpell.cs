@@ -5,31 +5,31 @@ namespace DNDAPI.Models.SubModels
     [BsonNoId]
     public class HealAtSlotLevelSpell
     {
-        [BsonElement("heal_at_slot_level1")]
+        [BsonElement("1")]
         public string HealAtSlotLevel1 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level2")]
+        [BsonElement("2")]
         public string HealAtSlotLevel2 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level3")]
+        [BsonElement("3")]
         public string HealAtSlotLevel3 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level4")]
+        [BsonElement("4")]
         public string HealAtSlotLevel4 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level5")]
+        [BsonElement("5")]
         public string HealAtSlotLevel5 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level6")]
+        [BsonElement("6")]
         public string HealAtSlotLevel6 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level7")]
+        [BsonElement("7")]
         public string HealAtSlotLevel7 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level8")]
+        [BsonElement("8")]
         public string HealAtSlotLevel8 { get; set; } = String.Empty;
 
-        [BsonElement("heal_at_slot_level9")]
+        [BsonElement("9")]
         public string HealAtSlotLevel9 { get; set; } = String.Empty;
     }
 }

@@ -30,7 +30,7 @@ namespace DNDAPI.Models
         public bool Concentration { get; set; }
 
         [BsonElement("damage")]
-        public bool DamageSpell { get; set; }
+        public DamageSpell? DamageSpell { get; set; }
 
         [BsonElement("dc")]
         public DCSpell? DC { get; set;}

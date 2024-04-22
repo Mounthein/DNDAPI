@@ -5,16 +5,16 @@ namespace DNDAPI.Models.SubModels
     [BsonNoId]
     public class DamageCharacterLevelSpell
     {
-        [BsonElement("dmChLvl1")]
+        [BsonElement("1")]
         public string DmChLcl1 { get; set; } = String.Empty;
 
-        [BsonElement("dmChLvl5")]
+        [BsonElement("5")]
         public string DmChLcl5 { get; set; } = String.Empty;
 
-        [BsonElement("dmChLvl11")]
+        [BsonElement("11")]
         public string DmChLcl11 { get; set; } = String.Empty;
 
-        [BsonElement("dmChLvl17")]
+        [BsonElement("17")]
         public string DmChLcl17 { get; set; } = String.Empty;
     }
 }
