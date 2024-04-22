@@ -9,7 +9,7 @@ namespace DNDAPI.Models.SubModels
         public int? Choose { get; set; }
 
         [BsonElement("from")]
-        public OptionsRace? From { get; set; }
+        public OptionsRace[]? From { get; set; }
 
         [BsonElement("type")]
         public string Type { get; set; } = String.Empty;

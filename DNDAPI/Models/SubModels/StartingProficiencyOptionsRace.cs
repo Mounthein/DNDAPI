@@ -14,5 +14,8 @@ namespace DNDAPI.Models.SubModels
 
         [BsonElement("from")]
         public From[]? From { get; set; }
+
+        [BsonElement("type")]
+        public string Type { get; set; } = String.Empty;
     }
 }

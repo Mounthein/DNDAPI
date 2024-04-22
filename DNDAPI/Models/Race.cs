@@ -36,7 +36,7 @@ namespace DNDAPI.Models
         public AbilityBonusOptionRace? AbilityBonusOptions { get; set; }
 
         [BsonElement("ability_bonuses")]
-        public AbilityBonusRace? AbilityBonus { get; set; }
+        public AbilityBonusRace[]? AbilityBonus { get; set; }
 
         [BsonElement("language_desc")]
         public string LanguageDesc { get; set; } = String.Empty;
@@ -50,7 +50,7 @@ namespace DNDAPI.Models
         [BsonElement("starting_proficiencies")]
         public From[]? StartingProficiencies { get; set; }
 
-        [BsonElement("starting_progiciency_options")]
+        [BsonElement("starting_proficiency_options")]
         public StartingProficiencyOptionsRace? StartingProficienciesOptions { get; set; }
 
         [BsonElement("subraces")]

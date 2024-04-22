@@ -7,7 +7,7 @@ namespace DNDAPI.Services
     {
         private readonly IMongoCollection<Race> _race;
 
-        public RaceService(DndStoreDatabaseSettings settings, MongoClient mongoClient)
+        public RaceService(IDndStoreDatabaseSettings settings, IMongoClient mongoClient)
         {
             var database = mongoClient.GetDatabase(settings.DatabaseName);
             _race = database.GetCollection<Race>(settings.DndRaceCollectionName);

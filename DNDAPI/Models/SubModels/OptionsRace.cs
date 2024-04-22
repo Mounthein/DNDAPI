@@ -7,7 +7,7 @@ namespace DNDAPI.Models.SubModels
     public class OptionsRace
     {
         [BsonElement("ability_score")]
-        public From[]? AbilityScore { get; set; }
+        public From? AbilityScore { get; set; }
 
         [BsonElement("bonus")]
         public int? Bonus { get; set; }
