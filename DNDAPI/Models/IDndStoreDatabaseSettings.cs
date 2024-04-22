@@ -20,5 +20,6 @@
         string DndLevelCollectioName { get; set; }
         string DndMagicItemsName { get; set; }
         string DndMagicSchoolsCollectionName { get; set; }
+        string DndProficiencyCollectionName { get; set; }
     }
 }
