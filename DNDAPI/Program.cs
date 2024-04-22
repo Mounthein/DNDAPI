@@ -28,6 +28,7 @@ builder.Services.AddScoped<IFeatureService, FeatureService>();
 builder.Services.AddScoped<ILevelService, LevelService>();
 builder.Services.AddScoped<IMagicItemService, MagicItemService>();
 builder.Services.AddScoped<IMagicSchoolService, MagicSchoolService>();
+builder.Services.AddScoped<IProficiencyService, ProficiencyService>();
 
 
 builder.Services.AddControllers();

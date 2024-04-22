@@ -16,6 +16,9 @@ namespace DNDAPI.Models
         [BsonElement("name")]
         public string Name { get; set; } = String.Empty;
 
+        [BsonElement("type")]
+        public string Type { get; set; } = String.Empty;
+
         [BsonElement("classes")]
         public From[]? Classes { get; set; }
 
