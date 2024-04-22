@@ -24,7 +24,7 @@ namespace DNDAPI.Models
         public string Name { get; set; } = String.Empty;
 
         [BsonElement("spells")]
-        public SpellsSubclass? Spells { get; set; }
+        public SpellsSubclass[]? Spells { get; set; }
 
         [BsonElement("subclass_flavor")]
         public string SubclassFlavor { get; set; } = String.Empty;

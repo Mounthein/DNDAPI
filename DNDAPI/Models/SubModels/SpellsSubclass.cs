@@ -7,7 +7,7 @@ namespace DNDAPI.Models.SubModels
     public class SpellsSubclass
     {
         [BsonElement("prerequisites")]
-        public PrerequisiteItemSubclass? Name { get; set; }
+        public PrerequisiteItemSubclass[]? Name { get; set; }
 
         [BsonElement("spell")]
         public From? Spell { get; set; }
