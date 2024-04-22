@@ -23,5 +23,6 @@
         string DndProficiencyCollectionName { get; set; }
         string DndRaceCollectionName { get; set; }
         string DndSpellCollectionName { get; set; }
+        string DndSubclassesCollectionName { get; set; }
     }
 }
