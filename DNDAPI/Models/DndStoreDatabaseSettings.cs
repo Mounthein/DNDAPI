@@ -24,5 +24,6 @@
         public string DndRaceCollectionName { get; set; } = String.Empty;
         public string DndSpellCollectionName { get; set; } = String.Empty;
         public string DndSubclassesCollectionName { get; set; } = String.Empty;
+        public string DndSubRaceCollectionName { get; set; } = String.Empty;
     }
 }
