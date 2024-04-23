@@ -10,7 +10,7 @@ namespace DNDAPI.Models.SubModels
         public AreaOfEffect? AreaOfEffect { get; set; }
 
         [BsonElement("damage")]
-        public DamageTrait? Damage { get; set; }
+        public DamageTrait[]? Damage { get; set; }
 
         [BsonElement("dc")]
         public DCTrait? DC { get; set; }

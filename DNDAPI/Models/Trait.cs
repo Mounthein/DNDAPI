@@ -34,13 +34,13 @@ namespace DNDAPI.Models
         public ExpertiseOptionFeature? ProficiencyChoices { get; set; }
 
         [BsonElement("races")]
-        public From? Race { get; set; }
+        public From[]? Race { get; set; }
 
         [BsonElement("subraces")]
-        public From? Subrace { get; set; }
+        public From[]? Subrace { get; set; }
 
         [BsonElement("trait_specific")]
-        public TraitSpecific[]? TraitSpecifics { get; set; }
+        public TraitSpecific? TraitSpecifics { get; set; }
 
     }
 }
