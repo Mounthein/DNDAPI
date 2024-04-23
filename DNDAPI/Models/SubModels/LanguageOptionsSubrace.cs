@@ -10,6 +10,6 @@ namespace DNDAPI.Models.SubModels
         public int? Choose { get; set; }
 
         [BsonElement("from")]
-        public From? From { get; set; }
+        public From[]? From { get; set; }
     }
 }

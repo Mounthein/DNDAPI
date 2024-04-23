@@ -32,6 +32,7 @@ builder.Services.AddScoped<IProficiencyService, ProficiencyService>();
 builder.Services.AddScoped<IRaceService, RaceService>();
 builder.Services.AddScoped<ISpellService, SpellService>();
 builder.Services.AddScoped<ISubclassService, SubclassService>();
+builder.Services.AddScoped<ISubraceService, SubraceService>();
 
 
 builder.Services.AddControllers();
