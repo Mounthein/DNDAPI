@@ -1,4 +1,5 @@
-﻿using DNDAPI.Models.Commons;
+﻿using DNDAPI.Controllers;
+using DNDAPI.Models.Commons;
 using DNDAPI.Models.SubModels;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
@@ -21,7 +22,7 @@ namespace DNDAPI.Models
         public string Index { get; set; } = String.Empty;
 
         [BsonElement("language_options")]
-        public LanguageOptionsSubrace? LanguageOptions { get; set; }
+        public LanguageOptionsCommon? LanguageOptions { get; set; }
 
         [BsonElement("languages")]
         public From[]? Languages { get; set; }

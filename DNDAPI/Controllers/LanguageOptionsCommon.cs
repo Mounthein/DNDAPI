@@ -1,10 +1,10 @@
 ﻿using DNDAPI.Models.Commons;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace DNDAPI.Models.SubModels
+namespace DNDAPI.Controllers
 {
     [BsonNoId]
-    public class LanguageOptionsSubrace
+    public class LanguageOptionsCommon
     {
         [BsonElement("choose")]
         public int? Choose { get; set; }
