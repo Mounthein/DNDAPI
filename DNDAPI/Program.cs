@@ -33,6 +33,7 @@ builder.Services.AddScoped<IRaceService, RaceService>();
 builder.Services.AddScoped<ISpellService, SpellService>();
 builder.Services.AddScoped<ISubclassService, SubclassService>();
 builder.Services.AddScoped<ISubraceService, SubraceService>();
+builder.Services.AddScoped<ITraitService, TraitService>();
 
 
 builder.Services.AddControllers();
