@@ -18,7 +18,7 @@ namespace DNDAPI.Models
         public ArmorClassEquipment? ArmorName { get; set; }
 
         [BsonElement("capacity")]
-        public string Capacity {  get; set; } = String.Empty;
+        public string Capacity { get; set; } = String.Empty;
 
         [BsonElement("category_range")]
         public string CategoryRange { get; set; } = String.Empty;
@@ -39,7 +39,7 @@ namespace DNDAPI.Models
         public From? EquipmentCategory { get; set; }
 
         [BsonElement("gear_category")]
-        public From? GearCategory { get;}
+        public From? GearCategory { get; set; }
 
         [BsonElement("index")]
         public string Index { get; set; } = String.Empty;
@@ -87,6 +87,6 @@ namespace DNDAPI.Models
         public string WeaponRange { get; set; } = String.Empty;
 
         [BsonElement("weight")]
-        public double? Weight { get; set;}
+        public double? Weight { get; set; }
     }
 }
