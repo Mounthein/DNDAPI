@@ -17,9 +17,6 @@ namespace DNDAPI.Models
         [BsonElement("class")]
         public From? Class { get; set; }
 
-        [BsonElement("classLevels")]
-        public From? ClassLevels { get; set; }
-
         [BsonElement("class_specific")]
         public ClassSpecificLevel? ClassSpecific { get; set; }
 
@@ -28,7 +25,7 @@ namespace DNDAPI.Models
 
         [BsonElement("index")]
         public string Index { get; set; } = String.Empty;
-        
+
         [BsonElement("level")]
         public int? LevelN { get; set; }
 
@@ -36,7 +33,7 @@ namespace DNDAPI.Models
         public int? ProficiencyBonus { get; set; }
 
         [BsonElement("spellcasting")]
-        public SpellcastingLevel? Spellcasting { get; set;}
+        public SpellcastingLevel? Spellcasting { get; set; }
 
         [BsonElement("subclass")]
         public From? Subcalss { get; set; }
