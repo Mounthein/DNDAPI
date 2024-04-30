@@ -9,6 +9,6 @@ namespace DNDAPI.Models.Commons
         public double? Quantity { get; set; }
 
         [BsonElement("unit")]
-        public string String { get; set; } = String.Empty;
+        public string Unit { get; set; } = String.Empty;
     }
 }

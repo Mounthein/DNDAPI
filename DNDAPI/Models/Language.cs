@@ -25,6 +25,6 @@ namespace DNDAPI.Models
         public string Type { get; set; } = String.Empty;
 
         [BsonElement("typical_speakers")]
-        public string[]? TypicalSpeakesr { get; set; }
+        public string[]? TypicalSpeakers { get; set; }
     }
 }
