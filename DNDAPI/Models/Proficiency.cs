@@ -11,13 +11,13 @@ namespace DNDAPI.Models
         public string Id { get; set; } = string.Empty;
 
         [BsonElement("index")]
-        public string Index { get; set; } = String.Empty;
+        public string Index { get; set; } = string.Empty;
 
         [BsonElement("name")]
-        public string Name { get; set; } = String.Empty;
+        public string Name { get; set; } = string.Empty;
 
         [BsonElement("type")]
-        public string Type { get; set; } = String.Empty;
+        public string Type { get; set; } = string.Empty;
 
         [BsonElement("classes")]
         public From[]? Classes { get; set; }
