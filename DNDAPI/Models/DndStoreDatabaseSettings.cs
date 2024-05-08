@@ -26,5 +26,7 @@
         public string DndSubclassesCollectionName { get; set; } = String.Empty;
         public string DndSubRaceCollectionName { get; set; } = String.Empty;
         public string DndTraitCollectionName { get; set; } = String.Empty;
+        public string DndUserCollectionName { get; set; } = String.Empty;
+        public string DndPass { get; set; } = String.Empty;
     }
 }

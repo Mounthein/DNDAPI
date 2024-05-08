@@ -26,5 +26,7 @@
         string DndSubclassesCollectionName { get; set; }
         string DndSubRaceCollectionName { get; set; }
         string DndTraitCollectionName { get; set; }
+        string DndUserCollectionName { get; set; }
+        string DndPass { get; set; }
     }
 }
