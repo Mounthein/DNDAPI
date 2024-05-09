@@ -1,6 +1,7 @@
 ﻿using DNDAPI.Models;
 using DNDAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -22,12 +23,17 @@ namespace DNDAPI.Controllers
         [HttpGet]
         public ActionResult Get(string id, string pass)
         {
+            Missatge m = new Missatge();
             User u = userService.Get(id, pass);
             if (u == null)
             {
-                return NotFound("Login Incorrect");
+                m.Message = "Login Incorrect";
+                var _json = JsonSerializer.Serialize(m);
+                return NotFound(_json.ToString());
             }
-            return Ok("Login Correct");
+            m.Message = "Login Correct";
+            var json = JsonSerializer.Serialize(m);
+            return Ok(json.ToString());
         }
 
         // POST api/<UserController>
