@@ -34,6 +34,7 @@ builder.Services.AddScoped<ISpellService, SpellService>();
 builder.Services.AddScoped<ISubclassService, SubclassService>();
 builder.Services.AddScoped<ISubraceService, SubraceService>();
 builder.Services.AddScoped<ITraitService, TraitService>();
+builder.Services.AddScoped<ICharacterService, CharacterService>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 
