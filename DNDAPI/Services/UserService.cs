@@ -24,12 +24,12 @@ namespace DNDAPI.Services
 
         public User Get(string id, string pass)
         {
-            return _users.Find(user => user.Id == id && user.Password == pass).FirstOrDefault();
+            return _users.Find(user => user.UserName == id && user.Password == pass).FirstOrDefault();
         }
 
         public User Get(string id)
         {
-            return _users.Find(user => user.Id == id).FirstOrDefault();
+            return _users.Find(user => user.UserName == id).FirstOrDefault();
         }
 
         public void Remove(string id, string check)
