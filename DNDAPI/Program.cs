@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http.Features;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -65,6 +66,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseAuthorization();
 
-app.MapGet();
+app.UseAuthentication();
+
+app.MapGet("/", () => "Hello World!");
 
 app.Run();
