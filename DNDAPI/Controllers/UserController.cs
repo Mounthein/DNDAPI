@@ -41,6 +41,7 @@ namespace DNDAPI.Controllers
         [HttpPost]
         public ActionResult Post([FromBody] User user)
         {
+            Missatge m = new Missatge();
             User u = new User();
             try
             {
@@ -52,11 +53,15 @@ namespace DNDAPI.Controllers
             
             if (u != null && u.UserName.Equals(user.UserName))
             {
-                return NotFound("User alredy exists");
+                m.Message = "User alredy exists";
+                var _jso = JsonSerializer.Serialize(m);
+                return NotFound(_jso.ToString());
             }
             userService.Create(user);
 
-            return Ok("Register Correct");
+            m.Message = "Register Correct";
+            var _json = JsonSerializer.Serialize(m);
+            return Ok(_json.ToString());
         }
 
         // PUT api/<UserController>/5
