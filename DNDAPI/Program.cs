@@ -67,7 +67,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 app.UseAuthorization();
 
 app.UseAuthentication();
-
+//app.MapControllers();
 app.MapGet("/", () => "Hello World!");
 
 app.Run();

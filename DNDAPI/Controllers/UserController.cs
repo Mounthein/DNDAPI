@@ -45,7 +45,7 @@ namespace DNDAPI.Controllers
             User u = new User();
             try
             {
-                u = userService.Get(user.Id);
+                u = userService.Get(user.UserName);
             } catch (Exception ex)
             {
 
