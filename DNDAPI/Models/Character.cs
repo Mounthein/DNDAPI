@@ -14,6 +14,9 @@ namespace DNDAPI.Models
         [BsonElement("name")]
         public string? Name { get; set; }
 
+        [BsonElement("userName")]
+        public string? UserName { get; set; } = string.Empty;
+
         [BsonElement("level")]
         public int? Level { get; set; }
 

@@ -5,18 +5,19 @@ using Microsoft.Extensions.Hosting;
 
 namespace DNDAPI.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Route("")]
+    //[ApiController]
     public class CharacterController : ControllerBase
     {
         private readonly ICharacterService characterService;
 
         public CharacterController(ICharacterService characterService)
         {
-                this.characterService = characterService;
+            this.characterService = characterService;
         }
 
         // GET: api/<CharacterController>
+        [Route("api/Get")]
         [HttpGet]
         public ActionResult<List<Character>> Get()
         {
@@ -24,13 +25,23 @@ namespace DNDAPI.Controllers
         }
 
         // GET api/<CharacterController>/5
-        [HttpGet("{id}")]
+        [Route("api/Get/{id}")]
+        [HttpGet]
         public ActionResult<Character> Get(string id)
         {
             return characterService.Get(id);
         }
 
+        //GET api/<CharacterController>/5
+        [Route("api/GetByUserName/{user}")]
+        [HttpGet]
+        public ActionResult<List<Character>> GetByUserName(string user)
+        {
+            return characterService.GetByUserName(user);
+        }
+
         // POST api/<CharacterController>
+        [Route("api/Post")]
         [HttpPost]
         public ActionResult<Character> Post([FromBody] Character character)
         {
@@ -40,23 +51,25 @@ namespace DNDAPI.Controllers
         }
 
         // PUT api/<CharacterController>/5
-        [HttpPut("{id}")]
+        [Route("api/Put")]
+        [HttpPut]
         public ActionResult Put(string id, [FromBody] Character character)
         {
-            var existingBackground = characterService.Get(id);
+            var existingCharacter = characterService.Get(id);
 
-            if (existingBackground == null)
+            if (existingCharacter == null)
             {
                 return NotFound($"Character with Id = {id} not found");
             }
 
-            characterService.Update(id, existingBackground);
+            characterService.Update(id, existingCharacter);
 
             return NoContent();
         }
 
         // DELETE api/<CharacterController>/5
-        [HttpDelete("{id}")]
+        [Route("api/Delete/{id}")]
+        [HttpDelete]
         public ActionResult Delete(string id)
         {
             var background = characterService.Get(id);

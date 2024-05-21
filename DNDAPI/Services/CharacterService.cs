@@ -28,6 +28,11 @@ namespace DNDAPI.Services
             return _character.Find(chara => chara.Id == id).FirstOrDefault();
         }
 
+        public List<Character> GetByUserName(string userName)
+        {
+            return _character.Find(chara => chara.UserName == userName).ToList();
+        }
+
         public void Remove(string id)
         {
             _character.DeleteOne(chara => chara.Id == id);
