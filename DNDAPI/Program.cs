@@ -64,10 +64,10 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 //app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.UseAuthentication();
-//app.MapControllers();
+app.MapControllers();
 app.MapGet("/", () => "Hello World!");
 
 app.Run();
